@@ -44,6 +44,31 @@
             key-positions = <11 12 13>;
             bindings = <&tog 4>;
         };
+
+        spotlight_left {
+            bindings = <&kp LG(SPACE)>;
+            key-positions = <1 2 3>;
+        };
+
+        spotlight_right {
+            bindings = <&kp LG(SPACE)>;
+            key-positions = <6 7 8>;
+        };
+
+        copy {
+            bindings = <&kp LG(C)>;
+            key-positions = <22 23>;
+        };
+
+        paste {
+            bindings = <&kp LG(V)>;
+            key-positions = <23 24>;
+        };
+
+        lock_screen {
+            bindings = <&kp LC(LG(Q))>;
+            key-positions = <3 4 5 6>;
+        };
     };
 
     macros {
@@ -85,10 +110,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                    &kp Q       &kp W       &kp E        &kp R        &kp T        &kp Y    &kp U        &kp I        &kp O       &kp P
-                    &mt LGUI A  &mt LALT S  &mt LCTRL D  &mt LSHFT F  &kp G        &kp H    &mt RSHFT J  &mt RCTRL K  &mt RALT L  &mt RGUI SEMICOLON
-&mt LEFT_SHIFT TAB  &kp Z       &kp X       &kp C        &kp V        &kp B        &kp N    &kp M        &kp COMMA    &kp DOT     &kp FSLH            &lt 1 ENTER
-                                            &kp DEL      &lt 1 TAB    &kp SPACE    &kp RET  &lt 2 ESC    &kp BSPC
+                    &kp Q       &kp W       &kp E                         &kp R        &kp T        &kp Y    &kp U        &kp I        &kp O       &kp P
+                    &mt LGUI A  &mt LALT S  &mt LCTRL D                   &mt LSHFT F  &kp G        &kp H    &mt RSHFT J  &mt RCTRL K  &mt RALT L  &mt RGUI SEMICOLON
+&mt LEFT_SHIFT TAB  &kp Z       &kp X       &kp C                         &kp V        &kp B        &kp N    &kp M        &kp COMMA    &kp DOT     &kp FSLH            &lt 1 ENTER
+                                            &mt LS(LA(LC(LEFT_GUI))) DEL  &lt 1 TAB    &kp SPACE    &kp RET  &lt 2 ESC    &kp BSPC
             >;
         };
 
@@ -111,10 +136,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp ESC    &key_repeat         &kp UP    &kp EQUAL      &kp LBRC    &kp RBRC  &kp N7        &kp N8        &mt BACKSLASH KP_N9  &kp KP_PLUS
-        &kp LSHFT  &kp LEFT            &kp DOWN  &kp RIGHT      &kp LBKT    &kp RBKT  &kp NUMBER_4  &kp N5        &kp NUMBER_6         &kp KP_MINUS
-&trans  &kp DEL    &kp LA(LEFT_ARROW)  &kp CAPS  &kp LA(RIGHT)  &kp LPAR    &kp RPAR  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3         &kp KP_MULTIPLY  &trans
-                                       &trans    &tog 0         &trans      &mo 3     &kp KP_N0     &trans
+        &kp ESC    &kp LG(GRAVE)       &kp UP       &kp EQUAL      &kp LBRC    &kp RBRC  &kp N7        &kp N8        &mt BACKSLASH KP_N9  &kp KP_PLUS
+        &kp LSHFT  &kp LEFT            &kp DOWN     &kp RIGHT      &kp LBKT    &kp RBKT  &kp NUMBER_4  &kp N5        &kp NUMBER_6         &kp KP_MINUS
+&trans  &kp DEL    &kp LA(LEFT_ARROW)  &kp CAPS     &kp LA(RIGHT)  &kp LPAR    &kp RPAR  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3         &kp KP_MULTIPLY  &trans
+                                       &key_repeat  &tog 0         &trans      &mo 3     &kp KP_N0     &trans
             >;
         };
 
