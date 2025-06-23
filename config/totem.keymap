@@ -129,10 +129,10 @@
 
         // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
-        nav_layer {
+        num_layer {
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 
-            label = "NAVI";
+            label = "NUM";
 
             // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
             //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
@@ -146,19 +146,19 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                &kp ESC       &kp LG(GRAVE)       &kp UP       &kp EQUAL      &kp LBRC    &kp RBRC  &kp N7        &kp N8        &mt BACKSLASH KP_N9  &kp KP_PLUS
-                &kp LEFT_GUI  &kp LEFT            &kp DOWN     &kp RIGHT      &kp LBKT    &kp RBKT  &kp NUMBER_4  &kp N5        &kp NUMBER_6         &kp KP_MINUS
-&kp LEFT_SHIFT  &kp LEFT_ALT  &kp LA(LEFT_ARROW)  &key_repeat  &kp LA(RIGHT)  &kp LPAR    &kp RPAR  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3         &kp KP_MULTIPLY  &trans
-                                                  &caps_word   &tog 0         &trans      &mo 3     &kp KP_N0     &trans
+                &kp LCTRL     &kp LG(GRAVE)       &kp UP       &kp KP_MULTIPLY  &kp LBRC    &kp RBRC  &kp N7        &kp N8        &mt SLASH KP_N9  &kp EQUAL
+                &kp LEFT_GUI  &kp LEFT            &kp DOWN     &kp RIGHT        &kp LBKT    &kp RBKT  &kp NUMBER_4  &kp N5        &kp NUMBER_6     &kp MINUS
+&kp LEFT_SHIFT  &kp LEFT_ALT  &kp LA(LEFT_ARROW)  &key_repeat  &kp LA(RIGHT)    &kp LPAR    &kp RPAR  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3     &kp SQT    &trans
+                                                  &caps_word   &tog 0           &trans      &mo 3     &kp KP_N0     &trans
             >;
         };
 
         // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
-        sim_layer {
+        nav_layer {
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 
-            label = "SYM";
+            label = "NAV";
 
             // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
             //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
@@ -172,9 +172,9 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp EXCL  &kp AT                &kp HASH              &kp DLLR      &kp PRCNT       &kp CARET          &kp AMPS      &kp UP_ARROW  &kp SQT        &kp DQT
-        &trans    &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp C_PP      &kp K_MUTE      &kp RA(RC(ENTER))  &kp LEFT      &kp DOWN      &kp RIGHT      &kp RC(RIGHT)
-&trans  &trans    &kp C_PREV            &kp C_NEXT            &kp C_VOL_DN  &kp C_VOL_UP    &kp RC(LEFT)       &kp RA(LEFT)  &key_repeat   &kp RA(RIGHT)  &kp BSLH       &lt 1 ENTER
+        &kp EXCL  &kp AT                &kp HASH              &kp DLLR      &kp PRCNT       &kp CARET          &kp AMPS      &kp UP_ARROW  &kp LC(MINUS)  &kp LC(LS(MINUS))
+        &trans    &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp C_PP      &kp K_MUTE      &kp RA(RC(ENTER))  &kp LEFT      &kp DOWN      &kp RIGHT      &kp RC(E)
+&trans  &trans    &kp C_PREV            &kp C_NEXT            &kp C_VOL_DN  &kp C_VOL_UP    &kp RC(R)          &kp RA(LEFT)  &key_repeat   &kp RA(RIGHT)  &kp BSLH           &lt 1 ENTER
                                         &trans                &tog 0        &mo 3           &trans             &tog 1        &trans
             >;
         };
