@@ -143,11 +143,11 @@
             flavor = "tap-preferred";
         };
 
-        td: tapdance {
+        td_num: tapdance_num {
             compatible = "zmk,behavior-tap-dance";
-            label = "TAPDANCE";
+            label = "TAPDANCE_NUM";
             #binding-cells = <0>;
-            bindings = <&kp UP_ARROW>, <&key_repeat>;
+            bindings = <&mo 1>, <&to 1>;
         };
 
         HML: hr_left_positions {
@@ -177,6 +177,13 @@
             hold-trigger-key-positions = <20 21 22 24 23 0 1 2 3 4 25 14 32 33 34 35 36 37 6 7 8 9 30 31 29 5 26 15 27 28>;
             hold-trigger-on-release;
         };
+
+        td_nav: td_nav {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_NAV";
+            #binding-cells = <0>;
+            bindings = <&mo 2>, <&to 2>;
+        };
     };
 
     keymap {
@@ -203,8 +210,8 @@
             bindings = <
                     &kp Q               &kp W       &kp E                         &kp R        &kp T        &kp Y    &kp U          &kp I          &kp O       &kp P
                     &mt LEFT_CONTROL A  &mt LALT S  &mt LCMD D                    &mt LSHFT F  &kp G        &kp H    &mt RSHFT J    &mt RCMD K     &mt RALT L  &mt RCTRL SEMICOLON
-&mt LEFT_SHIFT TAB  &kp Z               &kp X       &kp C                         &kp V        &kp B        &kp N    &kp M          &kp COMMA      &kp DOT     &kp FSLH             &to 2
-                                                    &mt LS(LA(LC(LEFT_GUI))) DEL  &to 1        &kp SPACE    &kp RET  &kp BACKSPACE  &kp RIGHT_GUI
+&mt LEFT_SHIFT TAB  &kp Z               &kp X       &kp C                         &kp V        &kp B        &kp N    &kp M          &kp COMMA      &kp DOT     &kp FSLH             &td_nav
+                                                    &mt LS(LA(LC(LEFT_GUI))) DEL  &td_num      &kp SPACE    &kp RET  &kp BACKSPACE  &kp RIGHT_GUI
             >;
         };
 
@@ -227,10 +234,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                &kp LCTRL     &kp LG(GRAVE)       &kp UP       &kp KP_MULTIPLY  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp N7        &kp N8           &mt SLASH KP_N9  &kp EQUAL
-                &kp LEFT_GUI  &kp LEFT            &kp DOWN     &kp RIGHT        &kp LEFT_BRACE          &kp RIGHT_BRACE        &kp NUMBER_4  &kp N5           &kp NUMBER_6     &kp MINUS
-&kp LEFT_SHIFT  &kp LEFT_ALT  &kp LA(LEFT_ARROW)  &key_repeat  &kp LA(RIGHT)    &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &kp NUMBER_1  &kp NUMBER_2     &kp NUMBER_3     &kp SQT    &to 2
-                                                  &mo 3        &to 0            &trans                  &trans                 &trans        &kp KP_NUMBER_0
+        &kp LCTRL     &kp GRAVE           &kp UP       &none          &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp N7        &kp N8        &kp N9        &kp EQUAL
+        &kp LEFT_GUI  &kp LEFT            &kp DOWN     &kp RIGHT      &kp LEFT_BRACE          &kp RIGHT_BRACE        &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp MINUS
+&trans  &kp LEFT_ALT  &kp LA(LEFT_ARROW)  &key_repeat  &kp LA(RIGHT)  &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SQT    &kp RIGHT_SHIFT
+                                          &mo 3        &trans         &trans                  &trans                 &trans        &kp N0
             >;
         };
 
@@ -253,10 +260,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp EXCL  &kp AT                &kp HASH              &kp DLLR      &kp PRCNT       &kp CARET          &kp AMPS      &kp UP_ARROW  &mt RG(RS(LBKT)) RG(LBKT)  &mt RG(RS(RBKT)) RG(RBKT)
-        &trans    &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp C_PP      &kp K_MUTE      &kp RA(RC(ENTER))  &kp LEFT      &kp DOWN      &kp RIGHT                  &kp RC(E)
-&trans  &trans    &kp C_PREV            &kp C_NEXT            &kp C_VOL_DN  &kp C_VOL_UP    &kp RC(R)          &kp RA(LEFT)  &key_repeat   &kp RA(RIGHT)              &kp BSLH                   &none
-                                        &trans                &to 0         &trans          &trans             &trans        &trans
+        &kp EXCL  &kp AT                &kp HASH              &kp DLLR      &kp PRCNT       &kp CARET          &kp AMPS                                   &kp ASTERISK  &kp RC(MINUS)                                &kp RS(RC(MINUS))
+        &trans    &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp C_PP      &kp K_MUTE      &kp RA(RC(ENTER))  &mt RG(RS(LEFT_BRACKET)) RG(LEFT_BRACKET)  &kp UP_ARROW  &mt RG(RS(RIGHT_BRACKET)) RG(RIGHT_BRACKET)  &kp LA(LC(RIGHT))
+&trans  &trans    &kp C_PREV            &kp C_NEXT            &kp C_VOL_DN  &kp C_VOL_UP    &kp RC(LA(LEFT))   &kp LEFT_ARROW                             &kp DOWN      &kp RIGHT                                    &kp BSLH           &td_nav
+                                        &trans                &to 0         &trans          &trans             &trans                                     &trans
             >;
         };
 
