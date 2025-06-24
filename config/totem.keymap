@@ -42,7 +42,7 @@
         combo_tvp {
             timeout-ms = <100>;
             key-positions = <11 12 13>;
-            bindings = <&tog 4>;
+            bindings = <&tog 0>;
         };
 
         spotlight_left {
@@ -227,10 +227,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                &kp LCTRL     &kp LG(GRAVE)       &kp UP       &kp KP_MULTIPLY  &kp LBRC    &kp RBRC  &kp N7        &kp N8           &mt SLASH KP_N9  &kp EQUAL
-                &kp LEFT_GUI  &kp LEFT            &kp DOWN     &kp RIGHT        &kp LBKT    &kp RBKT  &kp NUMBER_4  &kp N5           &kp NUMBER_6     &kp MINUS
-&kp LEFT_SHIFT  &kp LEFT_ALT  &kp LA(LEFT_ARROW)  &key_repeat  &kp LA(RIGHT)    &kp LPAR    &kp RPAR  &kp NUMBER_1  &kp NUMBER_2     &kp NUMBER_3     &kp SQT    &trans
-                                                  &mo 3        &tog 0           &trans      &trans    &trans        &kp KP_NUMBER_0
+                &kp LCTRL     &kp LG(GRAVE)       &kp UP       &kp KP_MULTIPLY  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp N7        &kp N8           &mt SLASH KP_N9  &kp EQUAL
+                &kp LEFT_GUI  &kp LEFT            &kp DOWN     &kp RIGHT        &kp LEFT_BRACE          &kp RIGHT_BRACE        &kp NUMBER_4  &kp N5           &kp NUMBER_6     &kp MINUS
+&kp LEFT_SHIFT  &kp LEFT_ALT  &kp LA(LEFT_ARROW)  &key_repeat  &kp LA(RIGHT)    &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &kp NUMBER_1  &kp NUMBER_2     &kp NUMBER_3     &kp SQT    &trans
+                                                  &mo 3        &tog 0           &trans                  &trans                 &trans        &kp KP_NUMBER_0
             >;
         };
 
