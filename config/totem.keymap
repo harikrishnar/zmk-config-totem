@@ -41,8 +41,8 @@
 
         combo_tvp {
             timeout-ms = <100>;
-            key-positions = <11 12 13>;
-            bindings = <&tog 0>;
+            key-positions = <22 23 24>;
+            bindings = <&tog 1>;
         };
 
         spotlight_left {
@@ -230,7 +230,7 @@
                 &kp LCTRL     &kp LG(GRAVE)       &kp UP       &kp KP_MULTIPLY  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp N7        &kp N8           &mt SLASH KP_N9  &kp EQUAL
                 &kp LEFT_GUI  &kp LEFT            &kp DOWN     &kp RIGHT        &kp LEFT_BRACE          &kp RIGHT_BRACE        &kp NUMBER_4  &kp N5           &kp NUMBER_6     &kp MINUS
 &kp LEFT_SHIFT  &kp LEFT_ALT  &kp LA(LEFT_ARROW)  &key_repeat  &kp LA(RIGHT)    &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &kp NUMBER_1  &kp NUMBER_2     &kp NUMBER_3     &kp SQT    &trans
-                                                  &mo 3        &tog 0           &trans                  &trans                 &trans        &kp KP_NUMBER_0
+                                                  &mo 3        &to 0            &trans                  &trans                 &trans        &kp KP_NUMBER_0
             >;
         };
 
@@ -255,7 +255,7 @@
             bindings = <
         &kp EXCL  &kp AT                &kp HASH              &kp DLLR      &kp PRCNT       &kp CARET          &kp AMPS      &kp UP_ARROW  &kp LC(MINUS)  &kp LC(LS(MINUS))
         &trans    &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp C_PP      &kp K_MUTE      &kp RA(RC(ENTER))  &kp LEFT      &kp DOWN      &kp RIGHT      &kp RC(E)
-&trans  &trans    &kp C_PREV            &kp C_NEXT            &kp C_VOL_DN  &kp C_VOL_UP    &kp RC(R)          &kp RA(LEFT)  &key_repeat   &kp RA(RIGHT)  &kp BSLH           &tog 1
+&trans  &trans    &kp C_PREV            &kp C_NEXT            &kp C_VOL_DN  &kp C_VOL_UP    &kp RC(R)          &kp RA(LEFT)  &key_repeat   &kp RA(RIGHT)  &kp BSLH           &to 1
                                         &trans                &trans        &trans          &trans             &tog 1        &trans
             >;
         };
