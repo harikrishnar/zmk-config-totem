@@ -240,7 +240,7 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp LCTRL     &kp LG(TAB)         &kp UP       &kp LG(GRAVE)  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp N7        &kp N8        &kp N9        &kp EQUAL
+        &kp LCTRL     &kp GRAVE           &kp UP       &kp LG(GRAVE)  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp N7        &kp N8        &kp N9        &kp EQUAL
         &kp LEFT_GUI  &kp LEFT            &kp DOWN     &kp RIGHT      &kp LEFT_BRACE          &kp RIGHT_BRACE        &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp MINUS
 &trans  &kp LEFT_ALT  &kp LA(LEFT_ARROW)  &key_repeat  &kp LA(RIGHT)  &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SQT    &kp RIGHT_SHIFT
                                           &mo 3        &trans         &trans                  &trans                 &trans        &kp N0
