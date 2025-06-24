@@ -253,9 +253,9 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp EXCL  &kp AT                &kp HASH              &kp DLLR      &kp PRCNT       &kp CARET          &kp AMPS      &kp UP_ARROW  &kp LC(MINUS)  &kp LC(LS(MINUS))
-        &trans    &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp C_PP      &kp K_MUTE      &kp RA(RC(ENTER))  &kp LEFT      &kp DOWN      &kp RIGHT      &kp RC(E)
-&trans  &trans    &kp C_PREV            &kp C_NEXT            &kp C_VOL_DN  &kp C_VOL_UP    &kp RC(R)          &kp RA(LEFT)  &key_repeat   &kp RA(RIGHT)  &kp BSLH           &none
+        &kp EXCL  &kp AT                &kp HASH              &kp DLLR      &kp PRCNT       &kp CARET          &kp AMPS      &kp UP_ARROW  &mt RG(RS(LBKT)) RG(LBKT)  &mt RG(RS(RBKT)) RG(RBKT)
+        &trans    &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp C_PP      &kp K_MUTE      &kp RA(RC(ENTER))  &kp LEFT      &kp DOWN      &kp RIGHT                  &kp RC(E)
+&trans  &trans    &kp C_PREV            &kp C_NEXT            &kp C_VOL_DN  &kp C_VOL_UP    &kp RC(R)          &kp RA(LEFT)  &key_repeat   &kp RA(RIGHT)              &kp BSLH                   &none
                                         &trans                &to 0         &trans          &trans             &trans        &trans
             >;
         };
