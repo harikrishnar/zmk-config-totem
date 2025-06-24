@@ -260,10 +260,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp EXCL  &kp AT                &kp HASH              &kp DLLR      &kp PRCNT       &kp CARET          &kp AMPS                                   &kp ASTERISK  &kp RC(MINUS)                                &kp RS(RC(MINUS))
-        &trans    &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp C_PP      &kp K_MUTE      &kp RA(RC(ENTER))  &mt RG(RS(LEFT_BRACKET)) RG(LEFT_BRACKET)  &kp UP_ARROW  &mt RG(RS(RIGHT_BRACKET)) RG(RIGHT_BRACKET)  &kp LA(LC(RIGHT))
-&trans  &trans    &kp C_PREV            &kp C_NEXT            &kp C_VOL_DN  &kp C_VOL_UP    &kp RC(LA(LEFT))   &kp LEFT_ARROW                             &kp DOWN      &kp RIGHT                                    &kp BSLH           &td_nav
-                                        &trans                &to 0         &trans          &trans             &trans                                     &trans
+        &kp EXCL  &kp AT                &kp HASH              &kp DLLR      &kp PRCNT       &kp CARET          &kp AMPS                                   &kp ASTERISK   &kp RC(MINUS)                                &kp RS(RC(MINUS))
+        &trans    &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp C_PP      &kp K_MUTE      &kp RA(RC(ENTER))  &mt RG(RS(LEFT_BRACKET)) RG(LEFT_BRACKET)  &kp UP_ARROW   &mt RG(RS(RIGHT_BRACKET)) RG(RIGHT_BRACKET)  &kp LA(LC(RIGHT))
+&trans  &trans    &kp C_PREV            &kp C_NEXT            &kp C_VOL_DN  &kp C_VOL_UP    &kp RC(LA(LEFT))   &kp LEFT_ARROW                             &kp DOWN       &kp RIGHT                                    &kp BSLH           &td_nav
+                                        &trans                &to 0         &trans          &trans             &trans                                     &kp RIGHT_GUI
             >;
         };
 
