@@ -184,11 +184,22 @@
             hold-trigger-on-release;
         };
 
-        td_nav: td_nav {
+        td_nav: tapdance_nav {
             compatible = "zmk,behavior-tap-dance";
-            label = "TD_NAV";
+            label = "TAPDANCE_NAV";
             #binding-cells = <0>;
             bindings = <&mo 2>, <&tog 2>;
+        };
+
+        layer_tap_hold: layer_tap_hold {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LAYER_TAP_HOLD";
+            bindings = <&mo>, <&tog>;
+
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <170>;
+            quick-tap-ms = <100>;
         };
     };
 
@@ -214,10 +225,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                               &kp Q               &kp W       &kp E               &kp R        &kp T      &kp Y    &kp U        &kp I          &kp O       &kp P
-                               &mt LEFT_CONTROL A  &mt LALT S  &mt LCMD D          &mt LSHFT F  &kp G      &kp H    &mt RSHFT J  &mt RCMD K     &mt RALT L  &mt RCTRL SEMICOLON
-&mt LA(LC(LEFT_SHIFT)) DELETE  &kp Z               &kp X       &kp C               &kp V        &kp B      &kp N    &kp M        &kp COMMA      &kp DOT     &kp FSLH             &kp RIGHT_GUI
-                                                               &mt LEFT_SHIFT TAB  &kp SPACE    &td_num    &td_nav  &kp ENTER    &kp BACKSPACE
+                               &kp Q               &kp W       &kp E               &kp R        &kp T                  &kp Y                &kp U        &kp I          &kp O       &kp P
+                               &mt LEFT_CONTROL A  &mt LALT S  &mt LCMD D          &mt LSHFT F  &kp G                  &kp H                &mt RSHFT J  &mt RCMD K     &mt RALT L  &mt RCTRL SEMICOLON
+&mt LA(LC(LEFT_SHIFT)) DELETE  &kp Z               &kp X       &kp C               &kp V        &kp B                  &kp N                &kp M        &kp COMMA      &kp DOT     &kp FSLH             &kp RIGHT_GUI
+                                                               &mt LEFT_SHIFT TAB  &kp SPACE    &layer_tap_hold 1 1    &layer_tap_hold 2 2  &kp ENTER    &kp BACKSPACE
             >;
         };
 
@@ -238,10 +249,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &mo 3          &kp GRAVE     &kp HASH                                   &kp SINGLE_QUOTE                             &kp LG(GRAVE)           &mt RIGHT_PARENTHESIS LEFT_PARENTHESIS  &kp N7        &kp N8        &kp N9        &kp EQUAL
-       &kp LCTRL      &kp LEFT_ALT  &kp LCMD                                   &kp LEFT_SHIFT                               &kp LG(LS(NUMBER_2))    &mt RIGHT_BRACE LEFT_BRACE              &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp MINUS
-&mo 4  &kp LG(MINUS)  &kp LG(PLUS)  &mt LS(LG(LEFT_BRACKET)) LG(LEFT_BRACKET)  &mt LG(LS(RIGHT_BRACKET)) LG(RIGHT_BRACKET)  &kp LG(LS(NUMBER_3))    &mt RIGHT_BRACKET LEFT_BRACKET          &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N0     &trans
-                                    &trans                                     &trans                                       &trans                  &trans                                  &trans        &trans
+       &layer_tap_hold 3 3  &kp GRAVE     &kp HASH                                   &kp SINGLE_QUOTE                             &kp LG(GRAVE)           &mt RIGHT_PARENTHESIS LEFT_PARENTHESIS  &kp N7        &kp N8        &kp N9        &kp EQUAL
+       &kp LCTRL            &kp LEFT_ALT  &kp LCMD                                   &kp LEFT_SHIFT                               &kp LG(LS(NUMBER_2))    &mt RIGHT_BRACE LEFT_BRACE              &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp MINUS
+&mo 4  &kp LG(MINUS)        &kp LG(PLUS)  &mt LS(LG(LEFT_BRACKET)) LG(LEFT_BRACKET)  &mt LG(LS(RIGHT_BRACKET)) LG(RIGHT_BRACKET)  &kp LG(LS(NUMBER_3))    &mt RIGHT_BRACKET LEFT_BRACKET          &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N0     &trans
+                                          &trans                                     &trans                                       &trans                  &trans                                  &trans        &trans
             >;
         };
 
