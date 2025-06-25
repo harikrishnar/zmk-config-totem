@@ -238,10 +238,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &mo 3      &kp GRAVE     &kp HASH  &kp SINGLE_QUOTE  &kp LG(GRAVE)           &mt RIGHT_PARENTHESIS LEFT_PARENTHESIS  &kp N7        &kp N8        &kp N9        &kp EQUAL
-       &kp LCTRL  &kp LEFT_ALT  &kp LCMD  &kp LEFT_SHIFT    &kp LG(LS(NUMBER_2))    &mt RIGHT_BRACE LEFT_BRACE              &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp MINUS
-&mo 4  &none      &none         &none     &none             &kp LG(LS(NUMBER_3))    &mt RIGHT_BRACKET LEFT_BRACKET          &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N0     &trans
-                                &trans    &trans            &trans                  &trans                                  &trans        &trans
+       &mo 3          &kp GRAVE     &kp HASH                                   &kp SINGLE_QUOTE                             &kp LG(GRAVE)           &mt RIGHT_PARENTHESIS LEFT_PARENTHESIS  &kp N7        &kp N8        &kp N9        &kp EQUAL
+       &kp LCTRL      &kp LEFT_ALT  &kp LCMD                                   &kp LEFT_SHIFT                               &kp LG(LS(NUMBER_2))    &mt RIGHT_BRACE LEFT_BRACE              &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp MINUS
+&mo 4  &kp LG(MINUS)  &kp LG(PLUS)  &mt LS(LG(LEFT_BRACKET)) LG(LEFT_BRACKET)  &mt LG(LS(RIGHT_BRACKET)) LG(RIGHT_BRACKET)  &kp LG(LS(NUMBER_3))    &mt RIGHT_BRACKET LEFT_BRACKET          &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N0     &trans
+                                    &trans                                     &trans                                       &trans                  &trans                                  &trans        &trans
             >;
         };
 
