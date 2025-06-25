@@ -289,7 +289,7 @@
         &kp LC(F18)  &kp LS(I)     &kp LS(HOME)  &kp LS(O)      &kp LS(F)      &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp GLOBE   &none  &none
         &trans       &kp LS(LEFT)  &kp LC(F17)   &kp LS(RIGHT)  &kp RET        &kp C_VOL_DN          &kp C_VOL_UP          &kp K_MUTE  &none  &none
 &trans  &kp J        &kp LS(C)     &kp LC(F16)   &kp LS(V)      &kp LC(F15)    &kp K_PREVIOUS        &kp C_PLAY_PAUSE      &kp C_NEXT  &none  &none  &trans
-                                   &trans        &kp LC(F12)    &kp LC(F11)    &trans                &trans                &trans
+                                   &trans        &trans         &trans         &trans                &trans                &trans
             >;
         };
 
