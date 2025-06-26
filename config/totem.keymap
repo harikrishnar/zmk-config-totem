@@ -226,10 +226,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                               &kp Q               &kp W       &kp E               &kp R        &kp T                  &kp Y                &kp U        &kp I          &kp O       &kp P
-                               &mt LEFT_CONTROL A  &mt LALT S  &mt LCMD D          &mt LSHFT F  &kp G                  &kp H                &mt RSHFT J  &mt RCMD K     &mt RALT L  &mt RCTRL SEMICOLON
-&mt LA(LC(LEFT_SHIFT)) DELETE  &kp Z               &kp X       &kp C               &kp V        &kp B                  &kp N                &kp M        &kp COMMA      &kp DOT     &kp FSLH             &kp RIGHT_GUI
-                                                               &mt LEFT_SHIFT TAB  &kp SPACE    &layer_tap_hold 1 1    &layer_tap_hold 2 2  &kp ENTER    &kp BACKSPACE
+                               &kp Q               &kp W             &kp E               &kp R           &kp T                  &kp Y                &kp U            &kp I            &kp O              &kp P
+                               &mt LEFT_CONTROL A  &mt LEFT_SHIFT S  &mt LEFT_ALT D      &mt LEFT_GUI F  &kp G                  &kp H                &mt RIGHT_GUI J  &mt RIGHT_ALT K  &mt RIGHT_SHIFT L  &mt RCTRL SEMICOLON
+&mt LA(LC(LEFT_SHIFT)) DELETE  &kp Z               &kp X             &kp C               &kp V           &kp B                  &kp N                &kp M            &kp COMMA        &kp DOT            &kp FSLH             &kp RIGHT_GUI
+                                                                     &mt LEFT_SHIFT TAB  &kp SPACE       &layer_tap_hold 1 1    &layer_tap_hold 2 2  &kp ENTER        &kp BACKSPACE
             >;
         };
 
@@ -250,10 +250,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &layer_tap_hold 3 3  &kp GRAVE     &kp HASH                                   &kp SINGLE_QUOTE                             &kp LG(GRAVE)           &mt RIGHT_PARENTHESIS LEFT_PARENTHESIS  &kp N7        &kp N8        &kp N9        &kp EQUAL
-       &kp LCTRL            &kp LEFT_ALT  &kp LCMD                                   &kp LEFT_SHIFT                               &kp LG(LS(NUMBER_2))    &mt RIGHT_BRACE LEFT_BRACE              &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp MINUS
-&mo 4  &kp LG(MINUS)        &kp LG(PLUS)  &mt LS(LG(LEFT_BRACKET)) LG(LEFT_BRACKET)  &mt LG(LS(RIGHT_BRACKET)) LG(RIGHT_BRACKET)  &kp LG(LS(NUMBER_3))    &mt RIGHT_BRACKET LEFT_BRACKET          &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N0     &trans
-                                          &trans                                     &trans                                       &trans                  &trans                                  &trans        &trans
+       &layer_tap_hold 3 3  &kp GRAVE       &kp HASH                                   &kp SINGLE_QUOTE                             &kp LG(GRAVE)           &mt RIGHT_PARENTHESIS LEFT_PARENTHESIS  &kp N7        &kp N8        &kp N9        &kp EQUAL
+       &kp LCTRL            &kp LEFT_SHIFT  &kp LEFT_ALT                               &kp LEFT_GUI                                 &kp LG(LS(NUMBER_2))    &mt RIGHT_BRACE LEFT_BRACE              &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp MINUS
+&mo 4  &kp LG(MINUS)        &kp LG(PLUS)    &mt LS(LG(LEFT_BRACKET)) LG(LEFT_BRACKET)  &mt LG(LS(RIGHT_BRACKET)) LG(RIGHT_BRACKET)  &kp LG(LS(NUMBER_3))    &mt RIGHT_BRACKET LEFT_BRACKET          &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N0     &trans
+                                            &trans                                     &trans                                       &trans                  &trans                                  &trans        &trans
             >;
         };
 
@@ -274,10 +274,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &kp EXCLAMATION  &kp AT_SIGN   &kp HASH                                   &kp DLLR                                     &kp PRCNT    &kp CARET          &kp AMPS        &kp ASTERISK  &kp RC(MINUS)  &kp RS(RC(MINUS))
-       &kp LCTRL        &kp LEFT_ALT  &kp LGUI                                   &kp LEFT_SHIFT                               &kp G        &kp LA(LC(ENTER))  &none           &kp UP_ARROW  &none          &kp RIGHT_SHIFT
-&mo 4  &kp LG(MINUS)    &kp LG(PLUS)  &mt LG(LS(LEFT_BRACKET)) LG(LEFT_BRACKET)  &mt LS(LG(RIGHT_BRACKET)) LG(RIGHT_BRACKET)  &kp D        &kp L              &kp LEFT_ARROW  &kp DOWN      &kp RIGHT      &kp BSLH           &trans
-                                      &trans                                     &trans                                       &trans       &trans             &trans          &trans
+       &kp EXCLAMATION  &kp AT_SIGN     &kp HASH                                   &kp DLLR                                     &kp PRCNT    &kp CARET          &kp AMPS        &kp ASTERISK  &kp RC(MINUS)  &kp RS(RC(MINUS))
+       &kp LCTRL        &kp LEFT_SHIFT  &kp LEFT_ALT                               &kp LEFT_GUI                                 &kp G        &kp LA(LC(ENTER))  &none           &kp UP_ARROW  &none          &kp RIGHT_SHIFT
+&mo 4  &kp LG(MINUS)    &kp LG(PLUS)    &mt LG(LS(LEFT_BRACKET)) LG(LEFT_BRACKET)  &mt LS(LG(RIGHT_BRACKET)) LG(RIGHT_BRACKET)  &kp D        &kp L              &kp LEFT_ARROW  &kp DOWN      &kp RIGHT      &kp BSLH           &trans
+                                        &trans                                     &trans                                       &trans       &trans             &trans          &trans
             >;
         };
 
