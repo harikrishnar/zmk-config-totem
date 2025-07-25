@@ -180,6 +180,24 @@
             tapping-term-ms = <170>;
             quick-tap-ms = <100>;
         };
+
+        sq_bracket: sq_bracket {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SQ_BRACKET";
+            bindings = <&kp LEFT_BRACKET>, <&kp RIGHT_BRACKET>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        cur_bracket: cur_bracket {
+            compatible = "zmk,behavior-mod-morph";
+            label = "CUR_BRACKET";
+            bindings = <&kp LEFT_BRACE>, <&kp RIGHT_BRACE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
     };
 
     keymap {
@@ -228,10 +246,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &kp NUMBER_1  &kp NUMBER_2    &kp NUMBER_3                               &kp NUMBER_4                                 &kp NUMBER_5            &kp NUMBER_6                    &kp N7          &kp N8          &kp N9           &kp NUMBER_0
-       &kp LCTRL     &kp LEFT_SHIFT  &kp LEFT_ALT                               &kp LEFT_GUI                                 &kp LG(LS(NUMBER_2))    &mt RIGHT_BRACE LEFT_BRACE      &none           &kp UP_ARROW    &none            &kp MINUS
-&mo 3  &kp GRAVE     &kp LG(GRAVE)   &mt LS(LG(LEFT_BRACKET)) LG(LEFT_BRACKET)  &mt LG(LS(RIGHT_BRACKET)) LG(RIGHT_BRACKET)  &kp LG(LS(NUMBER_3))    &mt RIGHT_BRACKET LEFT_BRACKET  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp EQUAL     &trans
-                                     &trans                                     &trans                                       &trans                  &trans                          &trans          &trans
+       &kp NUMBER_1  &kp NUMBER_2    &kp NUMBER_3              &kp NUMBER_4               &kp NUMBER_5            &kp NUMBER_6      &kp N7             &kp N8          &kp N9           &kp NUMBER_0
+       &kp LCTRL     &kp LEFT_SHIFT  &kp LEFT_ALT              &kp LEFT_GUI               &none                   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp UP_ARROW    &none            &kp MINUS
+&mo 3  &kp GRAVE     &kp LG(GRAVE)   &kp LS(LG(LEFT_BRACKET))  &kp LG(LS(RIGHT_BRACKET))  &kp LG(LS(NUMBER_3))    &none             &kp LEFT_ARROW     &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp EQUAL     &trans
+                                     &trans                    &trans                     &trans                  &trans            &trans             &trans
             >;
         };
 
@@ -252,10 +270,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp K_MUTE                                 &kp C_VOL_DN                                 &kp C_VOLUME_UP      &kp K_PREV        &kp C_PLAY_PAUSE         &kp K_NEXT    &kp RC(MINUS)  &kp RS(RC(MINUS))
-       &kp LCTRL             &kp LEFT_SHIFT        &kp LEFT_ALT                               &kp LEFT_GUI                                 &kp RA(RC(ENTER))    &kp LA(LC(LEFT))  &kp RA(RC(RIGHT_ARROW))  &kp UP_ARROW  &kp RG(RC(G))  &kp RIGHT_SHIFT
-&mo 3  &kp LG(MINUS)         &kp LG(PLUS)          &mt LG(LS(LEFT_BRACKET)) LG(LEFT_BRACKET)  &mt LS(LG(RIGHT_BRACKET)) LG(RIGHT_BRACKET)  &kp LG(D)            &kp RG(RS(L))     &kp LEFT_ARROW           &kp DOWN      &kp RIGHT      &kp BSLH           &trans
-                                                   &trans                                     &trans                                       &trans               &trans            &trans                   &trans
+       &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp K_PREV            &kp K_PLAY_PAUSE       &kp K_NEXT           &kp K_MUTE        &kp C_VOL_DN             &kp C_VOLUME_UP  &kp RC(MINUS)  &kp RS(RC(MINUS))
+       &kp LCTRL             &kp LEFT_SHIFT        &kp LEFT_ALT          &kp LEFT_GUI           &kp RA(RC(ENTER))    &kp LA(LC(LEFT))  &kp RA(RC(RIGHT_ARROW))  &kp UP_ARROW     &kp RG(RC(G))  &kp RIGHT_SHIFT
+&mo 3  &kp LG(MINUS)         &kp LG(PLUS)          &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &kp LG(D)            &kp RG(RS(L))     &kp LEFT_ARROW           &kp DOWN         &kp RIGHT      &kp BSLH           &trans
+                                                   &trans                &trans                 &trans               &trans            &trans                   &trans
             >;
         };
 
